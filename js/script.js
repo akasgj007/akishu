@@ -1,6 +1,4 @@
-/**
- * @author Untoldcoding <vishaltewatiawork@gmail.com>
- */
+
 (function ($) {
   "use strict";
   $(".untoldcoding-falling").sakura("start", {
@@ -24,7 +22,7 @@ function pauseAudio() {
   event.stopPropagation();
 }
 
-var countDownDate = new Date("Feb 14, 2024 00:00:00").getTime();
+var countDownDate = new Date("May 19, 2025 06:00:00").getTime();
 
 var x = setInterval(function () {
   var now = new Date().getTime();
