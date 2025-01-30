@@ -70,16 +70,17 @@ img {
   color: #fc1717;
   margin: 16px;
   text-align: center;
+  
 }
 
 .title h3 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 24px;
+  font-size: 22px;
   color: #ffffff;
-  margin-top: 5px;
-  text-shadow: 0 0 10px rgb(7, 7, 7);
+  margin-top: 15px;
+  text-shadow: 0px 0px 10px rgb(234, 93, 203);
 }
 
 .title p {
@@ -87,7 +88,7 @@ img {
   margin: 30px 0 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -261,7 +262,7 @@ a {
 }
 
 .happiness {
-  color: #fc0a0a;
+  color: #1a7c18;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -270,7 +271,7 @@ a {
 }
 
 .twitter {
-  color: #ffffff;
+  color: #0f62e0;
 }
 
 .music {
@@ -401,7 +402,7 @@ a {
 }
 
 .tile__img {
-  max-width: 45%;
+  max-width: 75%;
   text-align: center;
   height: auto;
   object-fit: cover;

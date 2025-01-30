@@ -12,13 +12,21 @@
 })(jQuery);
 
 $(document).on("click", function () {
-  document.getElementById("my_audio").play();
-  console.log("Shaadi me zaroor aana");
+  var audio = document.getElementById("my_audio");
+
+  // Check if audio is playing
+  if (audio.paused) {
+    // If paused, play audio
+    audio.play();
+  } else {
+    // If playing, pause audio
+    audio.pause();
+  }
 });
 
 function pauseAudio() {
   document.getElementById("my_audio").pause();
-  console.log("Shaadi me pakka aana");
+  
   event.stopPropagation();
 }
 
