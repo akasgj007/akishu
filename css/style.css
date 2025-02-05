@@ -413,7 +413,7 @@ a {
   height: 2px;
   margin-left: 10%;
   margin-right: 10%;
-  background: linear-gradient(to right, #ff5f6d, #ffc3a0);
+  background: linear-gradient(to right, #f1cfd2, #e8d6cb);
   transform: translateY(-50%);
 }
 .carousel-container {
