@@ -389,7 +389,33 @@ a {
 }
 
 /* Gallery Code start */
-/* Carousel container */
+
+/* Title Styling */
+.carousel-title {
+  font-family: 'Georgia', serif; /* Elegant font */
+  font-size: 2rem;  /* Large title size */
+  color: #4b0082;   /* Deep purple color */
+  text-align: center; /* Center-align text */
+  letter-spacing: 2px;  /* Space out the letters for a more refined look */
+  margin-bottom: 30px;  /* Space below the title */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);  /* Shadow for depth */
+  position: relative;
+  display: inline-block;
+}
+
+/* Title Gradient Effect */
+.carousel-title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background: linear-gradient(to right, #ff5f6d, #ffc3a0);
+  transform: translateY(-50%);
+}
 .carousel-container {
   position: relative;
   width: 100%;
@@ -398,13 +424,11 @@ a {
   overflow: hidden;
 }
 
-/* Carousel slide, moving continuously */
 .carousel-slide {
   display: flex;
-  animation: slide 30s linear infinite; /* Added infinite sliding effect */
+  transition: transform 0.5s ease;
 }
 
-/* Each carousel item */
 .carousel-item {
   width: 100%;
   height: auto;
@@ -412,15 +436,23 @@ a {
   cursor: pointer;
 }
 
-/* Keyframe for smooth sliding */
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+
 /* Gallery code end */
 
 @media only screen and (max-width: 600px) {
