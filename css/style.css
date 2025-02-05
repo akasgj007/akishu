@@ -389,7 +389,7 @@ a {
 }
 
 /* Gallery Code start */
-
+/* Carousel container */
 .carousel-container {
   position: relative;
   width: 100%;
@@ -398,11 +398,13 @@ a {
   overflow: hidden;
 }
 
+/* Carousel slide, moving continuously */
 .carousel-slide {
   display: flex;
-  transition: transform 0.5s ease;
+  animation: slide 30s linear infinite; /* Added infinite sliding effect */
 }
 
+/* Each carousel item */
 .carousel-item {
   width: 100%;
   height: auto;
@@ -410,23 +412,15 @@ a {
   cursor: pointer;
 }
 
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+/* Keyframe for smooth sliding */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-
-
 /* Gallery code end */
 
 @media only screen and (max-width: 600px) {
