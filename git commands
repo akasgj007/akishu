@@ -1,0 +1,6 @@
+
+git init (Initialize Git in your project folder)
+git add . (Stage files for commit)
+git commit -m "Initial commit" (Commit changes)
+git remote add origin <repository-url> (Link local repo to GitHub)
+git push -u origin main 

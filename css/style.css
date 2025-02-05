@@ -401,20 +401,37 @@ a {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);  /* Shadow for depth */
   position: relative;
   display: inline-block;
+  font-weight: 900;
 }
 
 /* Title Gradient Effect */
-.carousel-title::before {
+/* .carousel-title::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
   height: 2px;
-  margin-left: 10%;
-  margin-right: 10%;
-  background: linear-gradient(to right, #f1cfd2, #e8d6cb);
+  margin-left: 22%;
+  margin-right: 45%;
+  background: linear-gradient(to right, #dd636d, #bf4d07);
   transform: translateY(-50%);
+} */
+
+.strike {
+  position: relative;
+  display: inline-block;
+  font-weight: 100;
+}
+
+.strike::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px; /* Adjust thickness of the line */
+  background: linear-gradient(to right, rgba(75, 0, 130, 0.8), rgba(138, 43, 226, 0.6)); /* Smooth gradient matching indigo shades */
 }
 .carousel-container {
   position: relative;
