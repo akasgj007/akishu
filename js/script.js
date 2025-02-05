@@ -14,12 +14,17 @@
 })(jQuery);
 
 
-$(document).on("click", function () {
-  var audio = document.getElementById("my_audio");
-  if (audio.paused) {
-    audio.play();
+$(document).on("click", function (event) {
+  // Check if the click was inside the .carousel-container
+  if ($(event.target).closest('.carousel-container').length) {
+    
   } else {
-    audio.pause();
+    var audio = document.getElementById("my_audio");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
   }
 });
 
