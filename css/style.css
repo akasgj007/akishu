@@ -144,7 +144,7 @@ body {
   color: #054da4;
   padding: 8px;
   margin-right: 8px;
-  font-weight: 800;
+  font-weight: 300;
 }
 
 .venue a {
@@ -237,7 +237,7 @@ body {
 .footer {
   color: #564861;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   margin: 20px;
 }
 
@@ -388,6 +388,47 @@ a {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
 }
 
+/* Gallery Code start */
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px; /* You can adjust based on your design */
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+
+/* Gallery code end */
+
 @media only screen and (max-width: 600px) {
   a.arrow__btn {
     display: none;
@@ -443,6 +484,36 @@ blockquote::after {
   background: #e56d39;
   left: 1em;
 }
+
+/* Code added for toast  */
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #fff;
+  color: #8c3ebe;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
+
+.toast.show {
+  visibility: visible;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
+/* Code added for toast  */
+
+
 
 @keyframes dancing {
   0% {
