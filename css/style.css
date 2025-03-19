@@ -468,7 +468,9 @@ a {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-
+.hide-div{
+  display: none;
+}
 
 /* Gallery code end */
 
@@ -486,7 +488,7 @@ a {
 }
 
 .tile__img {
-  max-width: 75%;
+  max-width: 50%;
   text-align: center;
   height: auto;
   object-fit: cover;

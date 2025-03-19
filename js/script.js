@@ -16,9 +16,7 @@
 
 $(document).on("click", function (event) {
   // Check if the click was inside the .carousel-container
-  if ($(event.target).closest('.carousel-container').length) {
-    
-  } else {
+  if (!['BUTTON', 'A', 'DIV'].includes(event.target.tagName)){
     var audio = document.getElementById("my_audio");
     if (audio.paused) {
       audio.play();
